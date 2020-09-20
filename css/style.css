@@ -51,6 +51,7 @@
   font-family: "Cuprum", "Arial Narrow", sans-serif;
   font-size: 30px;
   line-height: 30px;
+  font-weight: 400;
   text-transform: uppercase;
   color: var(--basic-blue)
 }
@@ -351,8 +352,12 @@ background-color: var(--hover-promo);
 
 .button__services {
   background-color: var(--basic-blue);
-  color: var(--basic-white);
   border: none;
+  font-family: "Cuprum", "Arial Narrow", sans-serif;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 30px;
+  color: var(--basic-white);
 }
 
 .button__services:hover {
@@ -403,7 +408,7 @@ background-color: var(--hover-promo);
 }
 
 .footer__navigation a {
-  color: var(--basic-white);
+  color: var(--basic-gray);
   text-decoration: none;
 }
 
@@ -414,6 +419,12 @@ background-color: var(--hover-promo);
 .footer__navigation a:active {
   text-decoration: none;
   opacity: 0.5;
+}
+
+.footer__navigation_item {
+  font-family: "Cuprum", "Arial Narrow", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .footer__navigation_item:nth-last-child(-n+4) a {
