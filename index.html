@@ -9,19 +9,21 @@
   </head>
   <body class="page__body">
   <header class="header">
-    <div class="wrapper header__usermenu">
-      <a class="header__logo">
-        <img src="img/logo-technomart.svg"  width="108" height="18" alt="Логотип Техномарт">
-      </a>
-      <p>Поиск</p>
-      <ul class="header__buy">
-        <li class="header__buy_bookmarks"><a href="">Закладки</a></li>
-        <li><a href="">Корзина</a></li>
-        <li class="header__buy_arrange"><a href="">Оформить заказ</a></li>
-      </ul>
+    <div class="header__usermenu">
+      <div class="wrapper">
+        <a class="header__logo">
+          <img src="img/logo-technomart.svg"  width="108" height="18" alt="Логотип Техномарт">
+        </a>
+        <p>Поиск</p>
+        <ul class="header__buy">
+          <li class="header__buy_bookmarks"><a href="">Закладки</a></li>
+          <li><a href="">Корзина</a></li>
+          <li class="header__buy_arrange"><a href="">Оформить заказ</a></li>
+        </ul>
+      </div>
     </div>
-    <div class="wrapper">
-      <p class="header__text">Интернет-магазин строительных материалов и инструментов для ремонта</p>
+    <div class="wrapper header__info">
+      <p class="header__text">Интернет-магазин строительных материалов<br> и инструментов для ремонта</p>
       <div class="header__contacts">
         <a class="header__phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
         <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
@@ -29,22 +31,24 @@
       <a class="header__login" href="">Войти</a>
       <a class="header__reg" href="">Регистрация</a>
     </div>
-    <nav class="header__navigation">
-      <ul>
-        <li><a>Главная</a></li>
-        <li><a href="">Компания</a></li>
-        <li><a href="catalog.html">Каталог</a></li>
-        <li><a href="">Новости</a></li>
-        <li><a href="">Спецпредложения</a></li>
-        <li><a href="">Доставка</a></li>
-        <li><a href="">Контакты</a></li>
-      </ul>
-    </nav>
+    <div class="wrapper">
+      <nav class="header__navigation">
+        <ul>
+          <li><a>Главная</a></li>
+          <li><a href="">Компания</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="">Новости</a></li>
+          <li><a href="">Спецпредложения</a></li>
+          <li><a href="">Доставка</a></li>
+          <li><a href="">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main class="wrapper">
-    <section class="promo">
-      <h2>Промо</h2>
+  <main class="main">
+    <section class="promo wrapper">
+      <h2 class="hidden">Промо</h2>
       <ul class="promo__list">
         <li class="promo__item">
           <h3>Материалы</h3>
@@ -72,14 +76,14 @@
         <p>Настоящие мужские игрушки</p>
         <a class="button" href="catalog.html">Открыть каталог</a>
       </div>
-      <div class="promo__slider">
+      <div class="promo__slider hidden">
         <span>Дрели</span>
         <p>Соседям на радость!</p>
         <a class="button" href="catalog.html">Открыть каталог</a>
       </div>
     </section>
 
-    <section class="popular">
+    <section class="popular wrapper">
       <div class="title">
         <h2>Популярные товары:</h2>
         <a class="button" href="">Все популярные товары</a>
@@ -119,9 +123,11 @@
       </ul>
     </section>
 
-    <section class="producer">
-      <h2>Популярные производители:</h2>
-      <a class="button" href="">Все производители</a>
+    <section class="producer wrapper">
+      <div class="title">
+        <h2>Популярные производители:</h2>
+        <a class="button" href="">Все производители</a>
+      </div>
       <ul class="producer__list">
         <li class="producer__item">
           <a href="">
@@ -167,56 +173,70 @@
     </section>
 
     <section class="services">
-      <h2>Сервисы</h2>
-      <p>Хороший интернет-магазин отличается от плохого не только ценами!
-        Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-        <button class="button__services active" type="button">Доставка</button>
-        <button class="button__services" type="button">Гарантия</button>
-        <button class="button__services" type="button">Кредит</button>
-        <div class="services__item">
-          <h3>Доставка</h3>
-          <p>Мы с удовольствием доставим ваш товар прямо 
-            к вашему подъезду совершенно бесплатно!
-            Ведь мы неплохо заработаем, 
-            поднимая его на ваш этаж!</p>
-        </div>
-        <div class="services__item">
-          <h3>Гарантия</h3>
-          <p>Если купленный у нас товар поломается или заискрит,
-            а также в случае пожара, спровоцированного его возгоранием,
-            вы всегда можете быть уверены в нашей гарантии. Мы обменяем
-            сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
-        </div>
-        <div class="services__item">
-          <h3>Кредит</h3>
-          <p>Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
-        </div>
+      <div class="wrapper">
+        <h2>Сервисы</h2>
+        <p>Хороший интернет-магазин отличается от плохого не только ценами!
+          Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+          <div class="services__slider">
+            <ul>
+              <li>
+                <button class="button__services active" type="button">Доставка</button>
+              </li>
+              <li>
+                <button class="button__services" type="button">Гарантия</button>
+              </li>
+              <li>
+                <button class="button__services" type="button">Кредит</button>
+              </li>
+            </ul>
+            <div class="services__item">
+              <h3>Доставка</h3>
+              <p>Мы с удовольствием доставим ваш товар прямо 
+                к вашему подъезду совершенно бесплатно!
+                Ведь мы неплохо заработаем, 
+                поднимая его на ваш этаж!</p>
+            </div>
+            <div class="services__item hidden">
+              <h3>Гарантия</h3>
+              <p>Если купленный у нас товар поломается или заискрит,
+                а также в случае пожара, спровоцированного его возгоранием,
+                вы всегда можете быть уверены в нашей гарантии. Мы обменяем
+                сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
+            </div>
+            <div class="services__item hidden">
+              <h3>Кредит</h3>
+              <p>Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
+            </div>
+          </div>
+      </div>
     </section>
 
-    <section class="about">
-      <h2>КОМПАНИЯ «Техномарт»</h2>
-      <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
-        Мы можем доставить ваш товар в самые отдаленные точки России!
-        Техномарт работает со многими транспортными компаниями:</p>
-      <ul class="about__list">
-        <li class="about__item">Деловые линии</li>
-        <li class="about__item">Автотрейдинг</li>
-        <li class="about__item">ЖелДорЭкспедиция</li>
-      </ul>
-      <a class="button" href="">Подробнее о компании</a>
-    </section>
-
-    <section class="contacts">
-      <h2>Контакты</h2>
-      <p>Вы можете забрать товар сами, 
-        заехав в наш офис:</p>
-      <img src="img/address.jpg" width="300" height="158" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
-      <a class="button" href="">Заблудились? Напишите нам!</a>
-    </section>
+    <div class="columns wrapper">
+      <section class="about">
+        <h2>КОМПАНИЯ «Техномарт»</h2>
+        <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
+        <p>Мы можем доставить ваш товар в самые отдаленные точки России!
+          Техномарт работает со многими транспортными компаниями:</p>
+        <ul class="about__list">
+          <li class="about__item">Деловые линии</li>
+          <li class="about__item">Автотрейдинг</li>
+          <li class="about__item">ЖелДорЭкспедиция</li>
+        </ul>
+        <a class="button" href="">Подробнее о компании</a>
+      </section>
+  
+      <section class="contacts">
+        <h2>Контакты</h2>
+        <p>Вы можете забрать товар сами, 
+          заехав в наш офис:</p>
+        <img src="img/address.jpg" width="300" height="158" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+        <a class="button" href="">Заблудились? Напишите нам!</a>
+      </section>
+    </div>
   </main>
 
   <footer class="footer">
-    <div class="wrapper">
+    <div class="wrapper footer__info">
       <a class="footer__logo">
         <img src="img/logo-technomart.svg"  width="108" height="18" alt="Логотип Техномарт">
       </a>
@@ -235,15 +255,17 @@
         </ul>
       </nav>
     </div>
-    <div class="wrapper footer__links">
-      <p>© 2010–2019 Компания «Техномарт» Все права защищены</p>
-      <ul class="social">
-        <li class="social__item"><a href="">Вконтакте</a></li>
-        <li class="social__item"><a href="">Фейсбук</a></li>
-        <li class="social__item"><a href="">Инстаграм</a></li>
-      </ul>
-      <p>Обратная связь: <a class="footer__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
-      <p>Разработано — <a class="footer__link" href="https://htmlacademy.ru/">htmlacademy.ru</a></p>
+    <div class="footer__links">
+      <div class="wrapper">
+        <p>© 2010–2019 Компания «Техномарт» Все права защищены</p>
+        <ul class="social">
+          <li class="social__item"><a href="">Вконтакте</a></li>
+          <li class="social__item"><a href="">Фейсбук</a></li>
+          <li class="social__item"><a href="">Инстаграм</a></li>
+        </ul>
+        <p>Обратная связь: <a class="footer__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
+        <p>Разработано — <a class="footer__link" href="https://htmlacademy.ru/">htmlacademy.ru</a></p>
+      </div>
     </div>
   </footer>
   </body>
