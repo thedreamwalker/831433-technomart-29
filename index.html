@@ -28,8 +28,10 @@
         <a class="header__phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
         <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
       </div>
-      <a class="header__login" href="">Войти</a>
-      <a class="header__reg" href="">Регистрация</a>
+      <div class="header__user">
+        <a class="header__login" href="">Войти</a>
+        <a class="header__reg" href="">Регистрация</a>
+      </div>
     </div>
     <div class="wrapper">
       <nav class="header__navigation">
@@ -49,37 +51,41 @@
   <main class="main">
     <section class="promo wrapper">
       <h2 class="hidden">Промо</h2>
-      <ul class="promo__list">
-        <li class="promo__item">
+        <div class="promo__item">
           <h3>Материалы</h3>
           <a class="promo__button" href="">На любой вкус</a>
-        </li>
-        <li class="promo__item">
+        </div>
+        <div class="promo__item">
           <h3>Инструмент</h3>
           <a class="promo__button" href="">На все случаи</a>
-        </li>
-        <li class="promo__item">
+        </div>
+        <div class="promo__item">
           <h3>Техника</h3>
           <a class="promo__button" href="">Для стройки</a>
-        </li>
-        <li class="promo__item">
+        </div>
+        <div class="promo__item">
           <h3>Скидки 50%</h3>
           <a class="promo__button" href="">На 350 товаров</a>
-          </li>
-        <li class="promo__item">
+          </div>
+        <div class="promo__item">
           <h3>Доставка</h3>
           <a class="promo__button" href="">Бесплатно</a>
-        </li>
-      </ul>
-      <div class="promo__slider">
-        <span>Перфораторы</span>
-        <p>Настоящие мужские игрушки</p>
-        <a class="button" href="catalog.html">Открыть каталог</a>
-      </div>
-      <div class="promo__slider hidden">
-        <span>Дрели</span>
-        <p>Соседям на радость!</p>
-        <a class="button" href="catalog.html">Открыть каталог</a>
+        </div>
+      <div class="promo__sliderwrap">
+        <div class="promo__slider">
+          <span>Перфораторы</span>
+          <p>Настоящие мужские игрушки</p>
+          <a class="button" href="catalog.html">Открыть каталог</a>
+          <button class="button__last"></button>
+          <button class="button__next"></button>
+          <button class="promo__slider_dots"></button>
+          <button class="promo__slider_dots"></button>
+        </div>
+        <div class="promo__slider hidden">
+          <span>Дрели</span>
+          <p>Соседям на радость!</p>
+          <a class="button" href="catalog.html">Открыть каталог</a>
+        </div>
       </div>
     </section>
 
@@ -90,7 +96,9 @@
       </div>
       <ul class="popular__list">
         <li class="popular__item">
-          <img class="catalog__img" src="img/item-1.jpg" width="184" height="164" alt="">
+          <div class="catalog__img">
+            <img src="img/item-1.jpg" width="184" height="164" alt="">
+          </div>
           <a class="button button__buy" href="">Купить</a>
           <button class="button button__bookmarks" type="button">В закладки</button>
           <h4 class="catalog__title">Перфоратор BOSCH BFG 9000</h4>
@@ -98,7 +106,9 @@
           <p class="button button__price">25500 Р.</p>
         </li>
         <li class="popular__item">
-          <img class="catalog__img" src="img/item-2.jpg" width="127" height="112" alt="">
+          <div class="catalog__img">
+            <img src="img/item-2.jpg" width="127" height="112" alt="">
+          </div>
           <a class="button button__buy" href="">Купить</a>
           <button class="button button__bookmarks" type="button">В закладки</button>
           <h4 class="catalog__title">Перфоратор BOSCH BFG 3000</h4>
@@ -106,7 +116,9 @@
           <p class="button button__price">15500 Р.</p>
         </li>
         <li class="popular__item">
-          <img class="catalog__img" src="img/item-3.jpg" width="144" height="128" alt="">
+          <div class="catalog__img">
+            <img src="img/item-3.jpg" width="144" height="128" alt="">
+          </div>
           <a class="button button__buy" href="">Купить</a>
           <button class="button button__bookmarks" type="button">В закладки</button>
           <h4 class="catalog__title">Перфоратор BOSCH BFG 6000</h4>
@@ -114,7 +126,9 @@
           <p class="button button__price">25500 Р.</p>
         </li>
         <li class="popular__item">
-          <img class="catalog__img" src="img/item-4.jpg" width="127" height="112" alt="">
+          <div class="catalog__img">
+            <img src="img/item-4.jpg" width="127" height="112" alt="">
+          </div>
           <a class="button button__buy" href="">Купить</a>
           <button class="button button__bookmarks" type="button">В закладки</button>
           <h4 class="catalog__title">Перфоратор BOSCH BFG 2000</h4>
@@ -264,7 +278,7 @@
           <li class="social__item"><a href="">Инстаграм</a></li>
         </ul>
         <p>Обратная связь: <a class="footer__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
-        <p>Разработано — <a class="footer__link" href="https://htmlacademy.ru/">htmlacademy.ru</a></p>
+        <p>Разработано —<br> <a class="footer__link" href="https://htmlacademy.ru/">htmlacademy.ru</a></p>
       </div>
     </div>
   </footer>
