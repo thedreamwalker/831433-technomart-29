@@ -361,13 +361,12 @@
   padding: 37px 113px;
 }
 
-.popup__success .button:first-child {
-  padding: 10px 32px;
-}
-
+.popup__success .button:first-child,
 .popup__success .button:last-child {
   width: 192px;
-  padding: 10px 32px;
+  padding: 10px 10px;
+  text-align: center;
+  box-sizing: border-box;
 }
 
 .popup__success .button:last-child {
@@ -1774,7 +1773,6 @@ input[type=number]::-webkit-outer-spin-button {
 .filter__input:focus + label::before {
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px;
 }
 
 .filter__input_checkbox:checked + label::before {
