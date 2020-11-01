@@ -107,10 +107,10 @@ const buyCloseButton = buyPopup.querySelector(".button__close");
 
 for (var i = 0; i < buyLink.length; i++) {
   buyLink[i].addEventListener("click", function (evt) {
-      evt.preventDefault();
-      buyPopup.classList.add("active");
-    });
-  }
+    evt.preventDefault();
+    buyPopup.classList.add("active");
+  });
+}
 
   buyClose.addEventListener("click", function (evt) {
     evt.preventDefault();
@@ -124,10 +124,10 @@ buyCloseButton.addEventListener("click", function (evt) {
 });
 
 window.addEventListener("keydown", function (evt) {
-    if (evt.keyCode === 27) {
-        if (buyPopup.classList.contains("active")) {
-            evt.preventDefault();
-            buyPopup.classList.remove("active");
-        }
+  if (evt.keyCode === 27) {
+    if (buyPopup.classList.contains("active")) {
+      evt.preventDefault();
+      buyPopup.classList.remove("active");
     }
+  }
 });
